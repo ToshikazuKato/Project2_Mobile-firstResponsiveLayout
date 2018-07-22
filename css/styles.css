@@ -1,0 +1,349 @@
+/******** Global Scope ********/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 4vw;
+}
+
+a:hover{
+  color: rgb(155, 155, 155);
+}
+
+img{
+  width: 100%;
+}
+
+p{
+  color: rgb(155, 155, 155);
+  font-size: 4.5vw;
+}
+
+hr{
+  width: 85%;
+  margin: 0 auto;
+  border: none;
+  background-color: #ddd;
+  height: 1px;
+}
+
+.mainContainer section:hover{
+  border-top: 3px solid rgb(185, 198, 255);
+  border-bottom: 3px solid rgb(185, 198, 255);
+}
+
+
+/******  Header style *******/
+
+.header{
+  background-color: rgb(245, 245, 245);
+  padding: 3.5vh 6vw 5vh 6vw;
+}
+
+.studentName{
+  margin-top: 0;
+  margin-bottom: 3.5vh;
+  padding: 0;
+  font-weight: 900;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.links{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link{
+  background-color: rgb(255, 255, 255);
+  border-radius:  3px;
+  margin: 1.7vh 0;
+  padding-top: 1.7vh;
+  padding-bottom: 1.7vh;
+  font-weight: bold;
+}
+
+.profileImage{
+  margin-top: 7vh;
+  margin-bottom: 4vh;
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+
+
+/******  Main style *******/
+
+.mainContainer{
+  padding: 7vh 6vw 0vh 6vw;
+}
+
+.mainTitle{
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 900;
+}
+
+.image{
+  margin-top: 7vh;
+  margin-bottom: 4vh;
+}
+
+.title{
+  margin-bottom: 2vh;
+}
+
+.calculator{
+  padding-bottom: 5vh;
+}
+
+.contactInfo{
+  padding: 8vh 6vw 8vh 6vw;
+  background-color: rgb(245, 245, 245);
+}
+
+.contactTitle{
+  margin-bottom: 5vh;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 900;
+}
+
+.phone{
+  margin-top: 4vh;
+}
+.email{
+  margin-top: 3vh;
+}
+
+/******  Footer style *******/
+
+.flex{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  font-family: "Fjalla One", sans-serif;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+.footerName{
+  font-size: 4vw;
+}
+
+footer > nav {
+  display: none;
+}
+
+
+/******  Media query for tablet *******/
+
+@media screen and (min-width: 768px) {
+
+  .header{
+    padding: 5vh 2.5vw 4vh 2.5vw;
+  }
+
+  .links{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    margin-bottom: 3vh;
+  }
+
+  .link{
+    background-color: rgb(245, 245, 245);
+  }
+
+  .anchor{
+    font-size: initial;
+    font-family: "Fjalla One", sans-serif;
+  }
+
+  .flexTablet{
+    display: flex;
+    flex-flow: row-reverse;
+  }
+
+  .introduction{
+    flex-shrink: 5;
+    font-size: 3vw;
+    width: 60%;
+  }
+
+  .profileImage{
+    margin: 0;
+    padding:0;
+    width: 40%;
+  }
+
+  .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 6vh;
+  }
+
+  .portfolio > *{
+    flex-basis: 48%;
+  }
+
+  .description,
+  .phone,
+  .email{
+    font-size: 2.5vw;
+  }
+
+  .title{
+    font-size: 3vw
+  }
+
+  .comment{
+    font-size: 2.5vw;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+  .flex{
+    padding-bottom: 3vh;
+  }
+
+  footer > nav {
+    display: inline-block;
+  }
+
+  .footerName{
+    font-size: 3vw;
+    text-align: left;
+  }
+
+  .backToTop{
+    display: none;
+  }
+
+  footer > nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer > *{
+    width:50%;
+  }
+
+}
+
+
+/******  Media query for desktop *******/
+
+
+@media screen and (min-width: 1024px) {
+
+  .header{
+    padding: 2vh 5vw;
+  }
+
+  .main-nav{
+    align-items: center;
+    display: flex;
+    margin-bottom: 5vh;
+  }
+
+  .main-nav > .studentName,.links{
+    width: 50%;
+}
+
+  .studentName{
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .links{
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .flexTablet > p{
+    text-align: left;
+    font-size: 2vw;
+    padding-right: 2vw;
+  }
+
+  .mainContainer{
+    padding-top: 0;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .mainTitle{
+    padding-top: 5vh;
+    background-color: white;
+    font-size: 1.8vw;
+  }
+
+  .image{
+    margin-bottom: 2vh;
+  }
+
+  .portfolio{
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    padding-bottom: 0;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+
+  .portfolio > *{
+    flex-basis: 32%;
+  }
+
+  .title{
+    font-size: 2vw;
+  }
+
+  .description{
+    font-size: 1.5vw;
+}
+  .contactInfo{
+    padding-top: 6vh;
+    font-size: 1.8vw;
+  }
+
+  .flex{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 0;
+  }
+
+  .footerName{
+    font-size: 2.5vw;
+  }
+
+  .anchor{
+    font-size: 2vw;
+  }
+
+  .footerUl{
+    justify-content: space-between;
+  }
+
+  .footerUl > li{
+    width: 30%;
+    text-align: right;
+  }
+
+
+
+}
